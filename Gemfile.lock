@@ -1,0 +1,54 @@
+GIT
+  remote: https://github.com/tdtds/points-scraper.git
+  revision: 8a711b54456ae0241bd7198f2e6f21aa8db1c54d
+  branch: thorize
+  specs:
+    points-scraper (0.0.3)
+      mechanize
+      pit
+      thor
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    domain_name (0.5.3)
+      unf (~> 0.0.3)
+    i18n (0.6.0)
+    mail (2.4.4)
+      i18n (>= 0.4.0)
+      mime-types (~> 1.16)
+      treetop (~> 1.4.8)
+    mechanize (2.3)
+      domain_name (~> 0.5, >= 0.5.1)
+      mime-types (~> 1.17, >= 1.17.2)
+      net-http-digest_auth (~> 1.1, >= 1.1.1)
+      net-http-persistent (~> 2.5, >= 2.5.2)
+      nokogiri (~> 1.4)
+      ntlm-http (~> 0.1, >= 0.1.1)
+      webrobots (~> 0.0, >= 0.0.9)
+    mime-types (1.18)
+    net-http-digest_auth (1.2)
+    net-http-persistent (2.6)
+    nokogiri (1.5.2)
+    ntlm-http (0.1.1)
+    pit (0.0.6)
+    polyglot (0.3.3)
+    pony (1.4)
+      mail (> 2.0)
+    rack (1.4.1)
+    thor (0.14.6)
+    treetop (1.4.10)
+      polyglot
+      polyglot (>= 0.3.1)
+    unf (0.0.5)
+      unf_ext
+    unf_ext (0.0.4)
+    webrobots (0.0.13)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  points-scraper!
+  pony
+  rack
