@@ -17,12 +17,12 @@ def send_mail(body, subject)
                :enable_starttls_auto => true}})
 end
 
-desc 'getting current TPOINT'
+desc 'getting current TPoint.'
 task 'tpoint' do
   require 'points-scraper/tpoint'
   body =
     Points::Scraper::TPoint.new(ENV['TPOINT_USER'], ENV['TPOINT_PASSWORD']).start
-  send_mail(body, 'Current TPOINT')
+  send_mail(body, 'Current TPoint')
 end
 
 desc 'getting current ANA Mileage.'
