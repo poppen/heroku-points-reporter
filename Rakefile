@@ -3,7 +3,7 @@ require 'points-scraper'
 require 'pony'
 
 def send_mail(body, subject)
-  Pony.mail({:to => ENV['TO_ADDRESS'],
+  Pony.mail({:to => ENV['MAIL_TO'],
              :subject => subject,
              :body => body,
              :via => :smtp,
